@@ -33,8 +33,22 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
 }
 #barra2 {
     grid-area: barra2;
-    background-color: #f4f4f4;
-
+    text-align: right;
+    justify-content: space-around;
+    display: flex;
+    padding: 30px 20px;
+    list-style: none;
+    background-color: lightgray;
+}
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#Profile a:hover {
+    background-color: aqua;
+}
+#Out a:hover {
+    background-color: yellow;
 }
 .main-content {
     grid-area: main-content;
