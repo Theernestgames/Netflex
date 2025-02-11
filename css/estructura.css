@@ -30,6 +30,19 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
     background-color: #4CAF50;
     color: white;
     text-align: left;
+    align-content: center;
+}
+#barra1 div{
+    margin-left: 2em;
+}
+#barra1 button{
+    font-size: larger;
+    margin: auto 0.5em;
+    border: none;
+    background: none;
+    height: 2rem;
+    cursor: pointer;
+    padding: 0.2rem;
 }
 #barra2 {
     grid-area: barra2;
