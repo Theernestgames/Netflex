@@ -69,9 +69,19 @@ svg {
     padding: 20px;
 }
 .footer {
+    
     grid-area: footer;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    background-color: #000000;
+    color: blue;
+    padding: 25px;
+    margin: auto;
+    align-content: center;
+    
+    
 }
+.button{
+    display: none;
+}
+a:link {
+    color: rgb(247, 247, 247);
+  }
