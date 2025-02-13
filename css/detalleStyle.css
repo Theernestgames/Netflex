@@ -1,0 +1,58 @@
+.main-content {
+  counter-reset: comments;
+  display: grid;
+  grid-template-areas: "main-content main-content";
+  grid-template-columns: 5fr 1fr;
+}
+
+#Pelicula {
+  background-color: greenyellow;
+}
+
+#Video {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("/img/LQSAPortada.jpg");
+  background-size: cover;
+  margin: 1rem auto;
+  width: 90%;
+  aspect-ratio: 16/9;
+}
+
+.controles{
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.controles input{
+  margin: auto 0.7rem;
+  width: 100%;
+}
+
+.controles h4{
+  margin: auto 0.7rem;
+}
+
+.controles button {
+  width: 4%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.controles button img {
+  width: 100%;
+  height: 100%;
+}
+
+#Comentarios {
+  background-color: aqua;
+}
+#Comentarios h5{
+  margin: 0.5rem;
+}
+#Comentarios h5::before{
+  counter-increment: comments;
+  content: "Comentario " counter(comments) ": ";
+}
