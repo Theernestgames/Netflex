@@ -1,14 +1,15 @@
-
 /* Se aplica a todos los elementos  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     /* para ver el diseño de la web, útli para depurar*/
     background-color: red;
 }
+
 /* Contenedor principal
 ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de la pantalla */
 .grid-container {
@@ -17,11 +18,13 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
         "barra1 barra2"
         "main-content main-content"
         "footer footer";
-    grid-template-rows: 10vh 1fr auto; /* Altura: encabezado, contenido flexible, pie */
-    grid-template-columns: 5fr 1fr;/*250px 1fr; /* Ancho: barra lateral fija, contenido flexible */
+    grid-template-rows: 10vh 1fr auto;
+    /* Altura: encabezado, contenido flexible, pie */
+    grid-template-columns: 5fr 1fr;
+    /*250px 1fr; /* Ancho: barra lateral fija, contenido flexible */
     min-height: 100vh;
     margin-left: 2vh;
-    margin-right: 2vh ;
+    margin-right: 2vh;
 }
 
 /* Estilo para las áreas */
@@ -32,10 +35,12 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
     text-align: left;
     align-content: center;
 }
-#barra1 div{
+
+#barra1 div {
     margin-left: 2em;
 }
-#barra1 button{
+
+#barra1 button {
     font-size: larger;
     margin: auto 0.5em;
     border: none;
@@ -44,6 +49,7 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
     cursor: pointer;
     padding: 0.2rem;
 }
+
 #barra2 {
     grid-area: barra2;
     text-align: right;
@@ -53,35 +59,59 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
     list-style: none;
     background-color: lightgray;
 }
+
 svg {
     width: 1.5rem;
     height: 1.5rem;
 }
+
 #Profile a:hover {
     background-color: aqua;
 }
+
 #Out a:hover {
     background-color: yellow;
 }
+
 .main-content {
     grid-area: main-content;
     background-color: #fff;
     padding: 20px;
 }
+
 .footer {
-    
+
     grid-area: footer;
     background-color: #000000;
     color: blue;
     padding: 25px;
     margin: auto;
     align-content: center;
-    
-    
+
+
 }
-.button{
+
+.button {
     display: none;
 }
+
 a:link {
     color: rgb(247, 247, 247);
-  }
+}
+
+@media (max-width: 480px) {
+    #barra2 {
+        grid-area: 4 /span 2;
+    }
+    #Profile{
+        display: none;
+    }
+
+    .main-content {
+        grid-area: 2 / span 2;
+    }
+
+    .footer, #barra1 {
+        display: none;
+    }
+}
