@@ -100,18 +100,18 @@ a:link {
 }
 
 @media (max-width: 480px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
     #barra2 {
         grid-area: 4 /span 2;
     }
-    #Profile{
-        display: none;
-    }
 
     .main-content {
-        grid-area: 2 / span 2;
+        grid-row: 1 / span 2;
     }
 
-    .footer, #barra1 {
+    .footer, #barra1, #Profile {
         display: none;
     }
 }
