@@ -56,3 +56,19 @@
   counter-increment: comments;
   content: "Comentario " counter(comments) ": ";
 }
+@media (max-width: 480px){
+  #Comentarios, h4, p{
+    display: none;
+  }
+  #Pelicula{
+    grid-column: 1 / span 2;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px){
+  #Comentarios{
+    display: none;
+  }
+  #Pelicula{
+    grid-column: 1 / span 2;
+  }
+}
