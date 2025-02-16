@@ -5,10 +5,6 @@
   grid-template-columns: 5fr 1fr;
 }
 
-#Pelicula {
-  background-color: greenyellow;
-}
-
 #Video {
   display: flex;
   align-items: flex-end;
@@ -47,7 +43,7 @@
 }
 
 #Comentarios {
-  background-color: aqua;
+  border: 0.1rem solid;
 }
 #Comentarios h5{
   margin: 0.5rem;
