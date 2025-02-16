@@ -44,10 +44,6 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
     cursor: pointer;
     padding: 0.2rem;
 }
-#barra1 button a{
-    text-decoration: none;
-    color: black;
-}
 #barra2 {
     grid-area: barra2;
     text-align: right;
