@@ -69,14 +69,6 @@ svg {
     height: 1.5rem;
 }
 
-#Profile a:hover {
-    background-color: aqua;
-}
-
-#Out a:hover {
-    background-color: yellow;
-}
-
 .main-content {
     grid-area: main-content;
     padding: 20px;
