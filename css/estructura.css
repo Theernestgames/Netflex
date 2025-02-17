@@ -7,7 +7,9 @@
 
 html {
     /* para ver el diseño de la web, útli para depurar*/
-    background-color: red;
+    background-color: darkred;
+    background-image: linear-gradient(to bottom right, red ,darkred );
+
 }
 
 /* Contenedor principal
@@ -30,7 +32,6 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
 /* Estilo para las áreas */
 #barra1 {
     grid-area: barra1;
-    background-color: #4CAF50;
     color: white;
     text-align: left;
     align-content: center;
@@ -57,7 +58,6 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
     display: flex;
     padding: 30px 20px;
     list-style: none;
-    background-color: lightgray;
 }
 
 svg {
@@ -75,15 +75,12 @@ svg {
 
 .main-content {
     grid-area: main-content;
-    background-color: #fff;
     padding: 20px;
 }
 
 .footer {
 
     grid-area: footer;
-    background-color: #000000;
-    color: blue;
     padding: 25px;
     margin: auto;
     align-content: center;
@@ -114,4 +111,14 @@ a:link {
     .footer, #barra1, #Profile {
         display: none;
     }
+}
+@media (max-width: 1024px) {
+#barra2 {
+    display: none;
+}
+
+#barra1 button {
+    font-size: 0;
+}
+
 }
