@@ -8,7 +8,7 @@
 html {
     /* para ver el diseño de la web, útli para depurar*/
     background-color: darkred;
-    background-image: linear-gradient(to bottom right, red ,darkred );
+    background-image: linear-gradient(to bottom right, red, darkred);
 
 }
 
@@ -97,9 +97,10 @@ a:link {
 }
 
 @media (max-width: 480px) {
-    .grid-container{
+    .grid-container {
         grid-template-columns: 1fr;
     }
+
     #barra2 {
         grid-area: 4 /span 2;
     }
@@ -108,17 +109,20 @@ a:link {
         grid-row: 1 / span 2;
     }
 
-    .footer, #barra1, #Profile {
+    .footer,
+    #barra1,
+    #Profile {
         display: none;
     }
 }
-@media (max-width: 1024px) {
-#barra2 {
-    display: none;
-}
 
-#barra1 button {
-    font-size: 0;
-}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #barra2 {
+        display: none;
+    }
+
+    #barra1 button {
+        font-size: 0;
+    }
 
 }
