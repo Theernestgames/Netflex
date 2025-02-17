@@ -1,4 +1,8 @@
 /* Se aplica a todos los elementos  */
+:root{
+    --Rojo: linear-gradient(to bottom right, red, darkred);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +12,7 @@
 html {
     /* para ver el diseño de la web, útli para depurar*/
     background-color: darkred;
-    background-image: linear-gradient(to bottom right, red, darkred);
+    background-image: var(--Rojo);
 
 }
 

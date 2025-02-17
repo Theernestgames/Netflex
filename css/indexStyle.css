@@ -1,0 +1,32 @@
+.main-content{
+    display: block;
+}
+.tarjeta{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin: auto 2em;
+    background-color: aqua;
+    transition: 0.3s;
+}
+
+.tarjeta:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.5);
+}
+
+.Grupo{
+    display: flex;
+}
+.Grupo a{
+    text-decoration: none;
+}
+
+.tarjeta > img{
+    width: 19em;
+    aspect-ratio: 16/9;
+}
+.ContenidoCard{
+    padding: 0.4em;
+}
+h2{
+    margin: 2em auto;
+}
